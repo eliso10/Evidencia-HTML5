@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Atributos Personalizados y JavaScript</title>
+</head>
+<body>
+    <table data-nombre-productos="Manzanas,Naranjas,Duraznos" data-titulo="Tabla de Productos">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Manzanas</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Naranjas</td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Duraznos</td>
+                <td>$30.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var tabla = document.querySelector('table');
+        var numeroAnios = tabla.dataset.numeroAnios;
+        var productosMostrados = tabla.dataset.productosMostrados;
+        var nombreProductos = tabla.dataset.nombreProductos.split(',');
+        var tituloTabla = tabla.dataset.titulo;
+        console.log('Nombre de los productos:', nombreProductos);
+    </script>
+</body>
+</html>

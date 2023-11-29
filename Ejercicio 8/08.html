@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta dialog</title>
+</head>
+
+<body>
+    <h1>Dialogo con Enlaces</h1>
+    <button id="mostrar" onclick="dialogo.showModal()">Mostrar Diálogo</button>
+
+    <dialog id="dialogo">
+        <ul>
+            <li><a href="mailto:correo@example.com">Enviar email</a></li>
+            <li><a href="tel:+1234567890">Llamada telefónica</a></li>
+            <li><a href="https://wa.me/1234567890">WhatsApp</a></li>
+        </ul>
+        <button onclick="dialogo.close()">Cerrar</button>
+    </dialog>
+</body>
+
+</html>
